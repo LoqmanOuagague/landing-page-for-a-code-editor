@@ -176,7 +176,7 @@ section.features > div > div {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.17);
   box-sizing: border-box;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.17);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.17),0px 0px 2px 1px rgba(0, 0, 0, 0.18) inset;
   border-radius: 6px;
   width: 30%;
   padding: 33px 0px 10px 10px;
