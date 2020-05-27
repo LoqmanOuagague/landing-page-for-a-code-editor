@@ -42,6 +42,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
   background-color: #fff;
   padding: 10px;
@@ -71,12 +72,14 @@ header nav ul .nav-links a {
   color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
   margin: 5px 50px 0 0;
-  border-bottom: 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
 }
 
 header nav ul .nav-links a:hover {
   color: #2196f3;
   border-bottom: 2px solid currentColor;
+  text-shadow:0px 0px 5px #2196f33d;
 }
 
 /* End <header> rules */
@@ -104,17 +107,18 @@ header nav ul .nav-links a:hover {
 .main-section section.about-us .download-button:hover {
   box-shadow: 5px 5px 0px #0D90EFB3;
   transform: scale(1.05);
-  transition: 0.25s ease-in-out;
+  border-radius: 0px 10px;
 }
 .main-section section.about-us .donate-button,
 .main-section section.about-us .download-button {
   border-width: 4px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 10px 0;
   padding: 5px;
   min-width: 114px;
-  transition: 0.25s ease-in-out;
   margin: 20px 10px 0 0;
+  transition:all 0.15s ease-in-out;
+
 }
 
 .main-section section.about-us .download-button {
@@ -157,12 +161,11 @@ section.download-section > section.download-buttons > button {
   border: 4px solid #319aee;
   border-radius: 5px;
   box-shadow: none;
-  transition: 0.25s ease-in-out;
+  transition:all 0.15s ease-in-out;
 }
 section.download-section > section.download-buttons > button:hover{
   box-shadow: 7.5px 7.5px 0px #F48F31;
   transform: scale(1.1);
-  transition: 0.25s ease-in-out;
 }
 
 section.download-section > section.download-buttons > button > i {
@@ -217,12 +220,12 @@ section.contact-us > form > div textarea {
   padding: 10px;
   border-radius: 4px;
   margin: 7px 0px;
-  transition: 0.2s ease;
+  transition:all 0.15s ease-in-out;
 }
 section.contact-us > form > div input:focus,
 section.contact-us > form > div textarea:focus {
   box-shadow: 0px 0px 4px 2px #1353854a;
-  transition: 0.2s ease;
+  
 }
 section.contact-us > form > div textarea {
   height: 63.5%;
@@ -231,13 +234,11 @@ section.contact-us > form > div button[type="submit"] {
   background: #135385;
   color: #fff;
   border: 2px solid currentColor;
-  transition: 0.2s ease;
 }
 section.contact-us > form > div button[type="submit"]:hover {
   background: #fff;
   color: #135385;
   border: 2px solid currentColor;
-  transition: 0.2s ease;
 }
 /* End contact us section*/
 /* Start footer rules */
